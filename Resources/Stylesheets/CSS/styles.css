@@ -1,0 +1,135 @@
+/* Reset p and header elements */
+h1 {
+  margin: 0;
+  color: auto; }
+
+h2 {
+  margin: 0;
+  color: auto; }
+
+h3 {
+  margin: 0;
+  color: auto; }
+
+h4 {
+  margin: 0;
+  color: auto; }
+
+h5 {
+  margin: 0;
+  color: auto; }
+
+h6 {
+  margin: 0;
+  color: auto; }
+
+p {
+  margin: 0;
+  color: auto; }
+
+/* Basic structure */
+html {
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+.section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
+
+.section > div {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  height: 100%; }
+
+.block {
+  display: block;
+  width: 100%; }
+
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%; }
+
+.flex-column {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%; }
+
+#navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+
+#legal {
+  justify-content: space-evenly; }
+
+#fact-box-section > div {
+  flex-flow: row;
+  justify-content: flex-start; }
+
+#fact-box {
+  width: 45%;
+  justify-content: center;
+  background-color: white; }
+
+/* SECTION */
+/* Section heights */
+.lg {
+  height: 900px; }
+
+.md {
+  height: 600px; }
+
+.sm {
+  height: 300px; }
+
+.ft {
+  height: 50px; }
+
+/* Section color */
+.section:nth-child(even) {
+  background-color: white; }
+
+.section:nth-child(odd) {
+  background-color: #f1f1f1; }
+
+#header {
+  background: linear-gradient(to left, rgba(35, 34, 50, 0.6), rgba(1, 0, 69, 0.3)), url("https://images.unsplash.com/photo-1546757074-dc2932d92451?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#fact-box-section {
+  background-image: url("https://images.unsplash.com/photo-1546785962-5fede0a682e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2808&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#testimonials {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1545666214-1acd9f589e25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#footer {
+  background-color: #0f0c0c; }
+
+#legal {
+  background-color: #242121; }
+
+/*# sourceMappingURL=styles.css.map */
