@@ -59,17 +59,18 @@ button {
 }
 
 .section > div {
-    @include flexbox(column, wrap, space-evenly, center);
+    @include flexbox(column, wrap, space-around, center);
     width: 60%;
     height: 100%;
+    padding: 80px 0px;
 }
 
 .flex-row {
-    @include flexbox(row, no-wrap, space-evenly, center);
+    @include flexbox(row, nowrap, space-evenly, center);
 }
 
 .flex-column {
-    @include flexbox(column, no-wrap, space-evenly, center);
+    @include flexbox(column, nowrap, space-evenly, center);
 }
 
 .start {
@@ -85,7 +86,7 @@ button {
 }
 
 #navigation {
-    @include flexbox(row, no-wrap, space-between, center);
+    @include flexbox(row, nowrap, space-between, center);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding: 15px 0px;
@@ -187,23 +188,16 @@ button {
     h#{$i} { font-family: 'Merriweather Sans', sans-serif; }
 }
 
-p, span, li, button {
+p, span, li, button, em, a {
     font-family: 'Open Sans', sans-serif;
 }
 
-a, #dropdown {
-    transition: color 0.5s ease-in-out;
-    color: white;
-
-    &:hover {
-        transition: color 0.5s ease-in-out;
-        color: orange;
-        cursor: pointer;
-    }
+hr {
+    padding-bottom: 50px;
 }
 
 button {
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-color: orange;
     color: white;
     margin-top: 50px;
@@ -213,7 +207,7 @@ button {
 
     &:hover {
         cursor: pointer;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.3s ease-in-out;
         background-color: rgba(0, 0, 0, 0);
         color: white;
         border: 2px solid white;
@@ -221,7 +215,7 @@ button {
 
     &.inverse:hover {
         cursor: pointer;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.3s ease-in-out;
         background-color: rgba(0, 0, 0, 0);
         color: black;
         border: 2px solid black;
@@ -241,6 +235,32 @@ hr {
 nav {
     font-size: 18px;
     color:white;
+
+    ul {
+        li {   
+            a {
+                transition: all 0.3s ease-in-out;
+                color: white;
+
+                &:hover {
+                    transition: all 0.3s ease-in-out;
+                    color: orange;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+#dropdown {
+    transition: all 0.3s ease-in-out;
+    color: white;
+
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        color: orange;
+        cursor: pointer;
+    }
 }
 
 #top-info > div {
@@ -296,4 +316,50 @@ nav {
     grid-area: header;
     font-size: 16px;
     margin-bottom: 10px;
+}
+
+/* IMAGE BOXES STYLING */
+
+.frame {
+    width: 450px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-end;
+
+    em {
+        background-color: rgba(255, 115, 0, 0.5);
+        color: white;
+        font-size: 40px;
+        padding: 15px;
+        position: relative;
+        top: -201px;
+        left: -9px;
+    }
+
+    a {
+        display: block;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+        padding: 10px;
+        border-left: 1px solid orange;
+
+        &:hover {
+            transition: all 0.3s ease-in-out;
+            background-color: orange;
+            color: white;
+        }
+    }
+}
+
+#frame1 {
+    background-image: url('https://images.unsplash.com/photo-1547241508-f95f5c4c1305?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80')
+}
+
+#frame2 {
+    background-image: url('https://images.unsplash.com/photo-1547321911-4613f6df223a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2547&q=80')
+}
+
+#frame3 {
+    background-image: url('https://images.unsplash.com/photo-1547250098-7fa6606002ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80')
 }

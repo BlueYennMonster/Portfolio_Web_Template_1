@@ -56,20 +56,21 @@ button {
 .section > div {
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   width: 60%;
-  height: 100%; }
+  height: 100%;
+  padding: 80px 0px; }
 
 .flex-row {
   display: flex;
-  flex-flow: row no-wrap;
+  flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center; }
 
 .flex-column {
   display: flex;
-  flex-flow: column no-wrap;
+  flex-flow: column nowrap;
   justify-content: space-evenly;
   align-items: center; }
 
@@ -84,7 +85,7 @@ button {
 
 #navigation {
   display: flex;
-  flex-flow: row no-wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -238,19 +239,14 @@ h5 {
 h6 {
   font-family: 'Merriweather Sans', sans-serif; }
 
-p, span, li, button {
+p, span, li, button, em, a {
   font-family: 'Open Sans', sans-serif; }
 
-a, #dropdown {
-  transition: color 0.5s ease-in-out;
-  color: white; }
-  a:hover, #dropdown:hover {
-    transition: color 0.5s ease-in-out;
-    color: orange;
-    cursor: pointer; }
+hr {
+  padding-bottom: 50px; }
 
 button {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: orange;
   color: white;
   margin-top: 50px;
@@ -259,13 +255,13 @@ button {
   box-sizing: border-box; }
   button:hover {
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border: 2px solid white; }
   button.inverse:hover {
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-color: rgba(0, 0, 0, 0);
     color: black;
     border: 2px solid black; }
@@ -280,6 +276,21 @@ hr {
 nav {
   font-size: 18px;
   color: white; }
+  nav ul li a {
+    transition: all 0.3s ease-in-out;
+    color: white; }
+    nav ul li a:hover {
+      transition: all 0.3s ease-in-out;
+      color: orange;
+      cursor: pointer; }
+
+#dropdown {
+  transition: all 0.3s ease-in-out;
+  color: white; }
+  #dropdown:hover {
+    transition: all 0.3s ease-in-out;
+    color: orange;
+    cursor: pointer; }
 
 #top-info > div {
   margin-right: 20px; }
@@ -319,5 +330,40 @@ nav {
   grid-area: header;
   font-size: 16px;
   margin-bottom: 10px; }
+
+/* IMAGE BOXES STYLING */
+.frame {
+  width: 450px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-end; }
+  .frame em {
+    background-color: rgba(255, 115, 0, 0.5);
+    color: white;
+    font-size: 40px;
+    padding: 15px;
+    position: relative;
+    top: -201px;
+    left: -9px; }
+  .frame a {
+    display: block;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    padding: 10px;
+    border-left: 1px solid orange; }
+    .frame a:hover {
+      transition: all 0.3s ease-in-out;
+      background-color: orange;
+      color: white; }
+
+#frame1 {
+  background-image: url("https://images.unsplash.com/photo-1547241508-f95f5c4c1305?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"); }
+
+#frame2 {
+  background-image: url("https://images.unsplash.com/photo-1547321911-4613f6df223a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2547&q=80"); }
+
+#frame3 {
+  background-image: url("https://images.unsplash.com/photo-1547250098-7fa6606002ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"); }
 
 /*# sourceMappingURL=styles.css.map */
