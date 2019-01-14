@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -13,32 +13,48 @@
         <link rel="stylesheet" href="Resources/Stylesheets/CSS/main.css">
         <link rel="stylesheet" href="Resources/Stylesheets/CSS/styles.css">
     </head>
-    <body>
+    <body class="h-100">
           <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
         <div class="section lg" id="header">
             <div>
-                <div class="block">
-                    <div class="block">
-                        <h1>Contact info</h1>
-                    </div>
-                    <div class="block" id="navigation"> 
+                <div class="w-100">
+                    <div class="w-100 flex-row start" id="top-info">
                         <div>
-                            <h1>Logo</h1>
+                            <i class="fas fa-phone fa-sm"></i>
+                            <span>+00 0467 234 438</span>
                         </div>
-                        <nav>
-                            <h1>Nav</h1>
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <span>email@email.com</span>
+                        </div>
+                    </div>
+                    <div class="w-100" id="navigation"> 
+                        <div>
+                            <i class="fab fa-adn fa-5x"></i>
+                        </div>
+                        <nav class="w-20">
+                            <ul class="flex-row" id="nav-options">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li id="dropdown"><i class="fas fa-angle-down"></i> Browse</li>
+                            </ul>
+                            <ul class="hidden" id="dropdown-options">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Browse <i class="fas fa-angle-down"></i></a></li>
+                            </ul>
                         </nav>
                     </div>
                 </div>
-                <article>
-                    <h1>Heading</h1>
+                <div class="text-center w-70">
+                    <h1>In cetero dissentias dissentiet eos</h1>
                     <hr>
-                    <p>Content</p>
-                    <button>Just a button</button>
-                </article>
+                    <p>Nam alia probo scripta ad, feugiat assueverit theophrastus et mel, cu per habemus voluptatum. In idque tation mei, eos aeterno aliquid ad.</p>
+                    <button>In per integre legimus comprehensam</button>
+                </div>
                 
             </div>
         </div>
@@ -46,37 +62,54 @@
         <div class="section md">
             <div>
                 <div>
-                    <h1>Heading</h1>
+                    <h1>Eum intellegat intellegam et</h1>
                     <hr>
                 </div>
-                <div class="flex-row" id="features">
-                    <article>
-                        <h1>Heading</h1>
-                        <hr>
-                        <p>Content</p>
-                    </article>
-                    <article>
-                        <h1>Heading</h1>
-                        <hr>
-                        <p>Content</p>
-                    </article>
-                    <article>
-                        <h1>Heading</h1>
-                        <hr>
-                        <p>Content</p>
-                    </article>
-                    <article>
-                        <h1>Heading</h1>
-                        <hr>
-                        <p>Content</p>
-                    </article>
-                    <article>
-                        <h1>Heading</h1>
-                        <hr>
-                        <p>Content</p>
-                    </article>
+                <div class="w-100" id="features-test">
+                    <div>
+                        <i class="fas fa-hammer feature-image fa-2x"></i>
+                    </div>
+                    <div>
+                        <p class="feature-head">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-hourglass-half feature-image fa-2x"></i>
+                    </div>
+                    <div>
+                        <p class="feature-head">Viverra justo nec ultrices dui sapien. Tincidunt lobortis feugiat vivamus at.</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-heart feature-image fa-2x"></i>
+                    </div>
+                    <div>
+                        <p class="feature-head">Viverra orci sagittis eu volutpat odio facilisis mauris sit amet.</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-ankh feature-image fa-2x"></i>
+                    </div>
+                    <div>
+                        <p class="feature-head">Mi eget mauris pharetra et ultrices neque. </p>
+                    </div>
+                    <div></div>
+                    <div>
+                        <p class="feature-text">Cras tincidunt lobortis feugiat vivamus at augue. Nibh nisl condimentum id venenatis a condimentum.</p>
+                    </div>
+                    <div></div>
+                    <div>
+                        <p class="feature-text">Donec ultrices tincidunt arcu non. Suspendisse faucibus interdum posuere lorem ipsum dolor sit.</p>
+                    </div>
+                    <div></div>
+                    <div>
+                        <p class="feature-text">Integer vitae justo eget magna fermentum iaculis eu non. Sit amet est placerat in.</p>
+                    </div>
+                    <div></div>
+                    <div>
+                        <p class="feature-text">Egestas integer eget aliquet nibh praesent tristique magna sit. A cras semper auctor neque vitae tempus. </p>
+                    </div>
                 </div>
-                <button>Just a button</button>
+
+
+                <button class="inverse">Just a button</button>
             </div>
         </div>
 
@@ -87,7 +120,7 @@
                     <h1>Heading</h1>
                     <hr>
                 </div>
-                <div class="flex-row">
+                <div class="w-100 flex-row">
                     <div class="frame">
                         <img />
                         <div>
@@ -116,8 +149,8 @@
 
         
         <div class="section md" id="fact-box-section">
-            <div class="flex-row">
-                <div class="flex-column" id="fact-box">
+            <div>
+                <div class="h-100 flex-column w-40" id="fact-box">
                     <div>
                         <h1>Heading</h1>
                         <hr>
@@ -148,8 +181,8 @@
                     <h1>Heading</h1>
                     <hr>
                 </div>
-                <div class="flex-row">
-                    <div class="flex-column">
+                <div class="w-100 flex-row">
+                    <div class="h-100 flex-column">
                         <img />
                         <div>
                             <em>01</em>
@@ -157,7 +190,7 @@
                             <i class="fas fa-angle-right"></i>
                         </div>
                     </div>
-                    <div class="flex-column">
+                    <div class="h-100 flex-column">
                         <img />
                         <div>
                             <em>02</em>
@@ -165,7 +198,7 @@
                             <i class="fas fa-angle-right"></i>
                         </div>
                     </div>
-                    <div class="flex-column">
+                    <div class="h-100 flex-column">
                         <img />
                         <div>
                             <em>03</em>
@@ -185,8 +218,8 @@
                     <h1>Heading</h1>
                     <hr>
                 </div>
-                <div class="flex-row">
-                    <div class="flex-column">
+                <div class="w-100 flex-row">
+                    <div class="h-100 flex-column">
                         <div>
                             <p>Testimonial</p>
                         </div>
@@ -195,7 +228,7 @@
                             <p>Name / Company</p>
                         </div>
                     </div>
-                    <div class="flex-column">
+                    <div class="h-100 flex-column">
                         <div>
                             <p>Testimonial</p>
                         </div>
@@ -204,7 +237,7 @@
                             <p>Name / Company</p>
                         </div>
                     </div>
-                    <div class="flex-column">
+                    <div class="h-100 flex-column">
                         <div>
                             <p>Testimonial</p>
                         </div>
@@ -222,29 +255,29 @@
         <div class="section lg" id="footer">
             <div>
                 <h2>Heading</h2>
-                <div class="flex-row">
+                <div class="w-100 flex-row">
                     <i class="fas fa-home"></i>
                     <a>ABOUT</a>
                     <a>CONTACT</a>
                     <a>TERMS</a>
                 </div>
-                <div class="flex-row">
+                <div class="w-100 flex-row">
                     <div class="flex-column">
                         <h3>Heading</h3>
-                        <div class="flex-row">
+                        <div class="w-100 flex-row">
                             <i class="fas fa-map-marker-alt"></i>
                             <p>Address</p>
                         </div>
-                        <div class="flex-row">
+                        <div class="w-100 flex-row">
                             <i class="fas fa-phone"></i>
                             <p>Number</p>
                         </div>
-                        <div class="flex-row">
+                        <div class="w-100 flex-row">
                             <i class="fas fa-envelope"></i>
                             <p>Email</p>
                         </div>
                     </div>
-                    <div class="flex-column">
+                    <div class="h-100 flex-column">
                         <h3>Heading</h3>
                         <p>Newsletter blurb</p>
                         <input>
@@ -255,7 +288,7 @@
             </div>
         </div>
 
-        <div class="flex-row ft" id="legal">
+        <div class="w-100 flex-row ft" id="legal">
             <p>Copyright</p>
             <div id="privacy">
                 <a>Privacy</a>
