@@ -101,12 +101,14 @@ button {
     & > div {
         flex-flow: row;
         justify-content: flex-start;
+        padding: 0px;
     }
 }
 
 #fact-box {
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: white;
+    padding: 80px 40px;
 }
 
 /* Widths */
@@ -192,10 +194,6 @@ p, span, li, button, em, a {
     font-family: 'Open Sans', sans-serif;
 }
 
-hr {
-    padding-bottom: 50px;
-}
-
 button {
     transition: all 0.3s ease-in-out;
     background-color: orange;
@@ -226,6 +224,7 @@ hr {
     border-top: 5px solid orange;
     width: 20%;
     margin: 20px auto;
+    padding-bottom: 50px;
 }
 
 /* HEADER STYLING */
@@ -363,3 +362,45 @@ nav {
 #frame3 {
     background-image: url('https://images.unsplash.com/photo-1547250098-7fa6606002ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80')
 }
+
+/* FACTBOX STYLING */
+
+#fact-box {
+    align-items: flex-start;
+
+    div hr {
+        margin-left: 0px;
+        padding-bottom: 20px;
+    }
+}
+
+#fact-grid {
+    display: grid;
+    grid-template: 1fr 1fr / 0.1fr 1fr;
+    margin-top: 40px;
+    grid-row-gap: 40px;
+
+    i:before {
+        color: orange;
+    }
+
+    div {
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 10px 0px;
+        }
+
+        a {
+            margin-top: 10px;
+        }
+
+        a {
+            color: orange;
+        }
+    }
+}
+
