@@ -241,7 +241,7 @@ h5 {
 h6 {
   font-family: 'Merriweather Sans', sans-serif; }
 
-p, span, li, button, em, a, blockquote {
+p, span, li, button, em, a, blockquote, input {
   font-family: 'Open Sans', sans-serif; }
 
 button {
@@ -426,9 +426,11 @@ nav {
   background-image: url("https://images.unsplash.com/photo-1546091184-84697ac05c9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"); }
 
 /* Testimonials */
-.testimonial {
-  align-items: flex-start;
+#testimonials {
   color: white; }
+
+.testimonial {
+  align-items: flex-start; }
 
 .testimonial-quote {
   background-color: rgba(0, 0, 0, 0.5);
@@ -462,5 +464,73 @@ nav {
 
 #quote-3 {
   left: 1553px; }
+
+/* FOOTER STYLING */
+#footer {
+  color: white; }
+  #footer h3 {
+    position: relative; }
+  #footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 0px; }
+
+#contact-title {
+  left: -70px; }
+
+#newsletter-title {
+  left: -10px; }
+
+#footer-nav {
+  color: orange;
+  margin: 25px 0px 30px 0px; }
+  #footer-nav a, #footer-nav i {
+    transition: all 0.3s ease-in-out;
+    color: orange; }
+    #footer-nav a:hover, #footer-nav i:hover {
+      transition: all 0.3s ease-in-out;
+      color: white;
+      cursor: pointer; }
+
+#contact {
+  justify-content: center;
+  margin-top: 20px; }
+  #contact div {
+    justify-content: flex-start; }
+    #contact div i {
+      margin-right: 20px; }
+
+#newsletter {
+  margin-top: 40px;
+  width: 28%;
+  align-items: flex-start; }
+  #newsletter p {
+    margin-bottom: 20px; }
+  #newsletter input {
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(50, 50, 50, 0.4);
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    color: white; }
+    #newsletter input:hover {
+      transition: all 0.3s ease-in-out;
+      background-color: rgba(100, 100, 100, 0.4); }
+
+/* BOTTOM STYLING */
+#legal div {
+  padding: 0px;
+  color: white; }
+  #legal div p {
+    align-self: flex-start; }
+
+#privacy {
+  align-self: flex-end; }
+  #privacy a {
+    transition: all 0.3s ease-in-out;
+    color: orange; }
+    #privacy a:hover {
+      transition: all 0.3s ease-in-out;
+      color: white;
+      cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */

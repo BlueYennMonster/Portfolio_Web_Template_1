@@ -266,50 +266,59 @@
         </div>
 
         
-        <div class="section lg" id="footer">
+        <div class="section" id="footer">
             <div>
-                <h2>Heading</h2>
+                <div class="flex-column w-100">
+                    <h2>Heading</h2>
+                    <div class="w-30 flex-row" id="footer-nav">
+                        <i class="fas fa-home"></i>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+                <hr class="w-80"/>
                 <div class="w-100 flex-row">
-                    <i class="fas fa-home"></i>
-                    <a>ABOUT</a>
-                    <a>CONTACT</a>
-                    <a>TERMS</a>
+                    <h3 id="contact-title">Adipiscing elit</h3>
+                    <h3 id="newsletter-title">Consectetur</h3>
                 </div>
                 <div class="w-100 flex-row">
-                    <div class="flex-column">
-                        <h3>Heading</h3>
+                    <div class="flex-column" id="contact">
                         <div class="w-100 flex-row">
                             <i class="fas fa-map-marker-alt"></i>
-                            <p>Address</p>
+                            <p>Street Name & Number, Town, Postcode</p>
                         </div>
+                        <hr class="w-100">
                         <div class="w-100 flex-row">
-                            <i class="fas fa-phone"></i>
-                            <p>Number</p>
+                            <i class="fas fa-phone border"></i>
+                            <p class="border">+00 (123) 456 7890</p>
                         </div>
+                        <hr class="w-100">
                         <div class="w-100 flex-row">
                             <i class="fas fa-envelope"></i>
-                            <p>Email</p>
+                            <p>info@domain.com</p>
                         </div>
                     </div>
-                    <div class="h-100 flex-column">
-                        <h3>Heading</h3>
-                        <p>Newsletter blurb</p>
-                        <input>
-                        <input>
-                        <button>Submit</button>
-                    </div>
+                    <form action="#" method="post" class="h-100 flex-column" id="newsletter">
+                        <p>Mattis enim ut tellus elementum sagittis vitae. Arcu dictum varius duis at consectetur lorem. Tristique senectus et netus et malesuada fames ac turpis.</p>
+                        <input type="text" value placeholder="Name">
+                        <input type="email" value placeholder="Email">
+                        <button type="submit" value="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="section ft"  id="legal">
+            <div class="w-100 flex-row">
+                <p>Copyright</p>
+                <div class="flex-row h-100 w-40" id="privacy">
+                    <a href="#">Privacy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">Disclaimer</a>
                 </div>
             </div>
         </div>
 
-        <div class="w-100 flex-row ft" id="legal">
-            <p>Copyright</p>
-            <div id="privacy">
-                <a>Privacy</a>
-                <a>Cookies</a>
-                <a>Disclaimer</a>
-            </div>
-        </div>
 
         <script src="Resources/Scripts/Vendor/modernizr-3.6.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

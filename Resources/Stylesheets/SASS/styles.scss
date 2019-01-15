@@ -190,7 +190,7 @@ button {
     h#{$i} { font-family: 'Merriweather Sans', sans-serif; }
 }
 
-p, span, li, button, em, a, blockquote {
+p, span, li, button, em, a, blockquote, input {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -459,9 +459,12 @@ nav {
 
 /* Testimonials */
 
+#testimonials {
+    color: white;
+}
+
 .testimonial {
     align-items: flex-start;
-    color: white;
 }
 
 .testimonial-quote {
@@ -509,4 +512,106 @@ nav {
 
 #quote-3 {
     left: 1553px;
+}
+
+/* FOOTER STYLING */
+
+#footer {
+    color: white;
+
+    h3 {
+        position: relative;
+    }
+
+    hr {
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 0px;
+    }
+}
+
+#contact-title {
+    left: -70px;
+}
+
+#newsletter-title {
+    left: -10px;
+}
+
+#footer-nav {
+    color: orange;
+    margin: 25px 0px 30px 0px;
+
+    a, i {
+        transition: all 0.3s ease-in-out;
+        color: orange;
+
+        &:hover {
+            transition: all 0.3s ease-in-out;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+#contact {
+    justify-content: center;
+    margin-top: 20px;
+
+    div {
+        justify-content: flex-start;
+
+        i {
+            margin-right: 20px;
+        }
+    }
+}
+
+#newsletter {
+    margin-top: 40px;
+    width: 28%;
+    align-items: flex-start;
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    input {
+        transition: all 0.3s ease-in-out;
+        background-color: rgba(50, 50, 50, 0.4);
+        border: none;
+        padding: 10px;
+        margin-top: 5px;
+        color: white;
+
+        &:hover {
+            transition: all 0.3s ease-in-out;
+            background-color: rgba(100, 100, 100, 0.4);
+        }
+    }
+}
+
+/* BOTTOM STYLING */
+
+#legal {
+    div {
+        padding: 0px;
+        color: white;
+        p {
+            align-self: flex-start;
+        }
+    }
+}
+
+#privacy {
+    align-self: flex-end;
+    a {
+        transition: all 0.3s ease-in-out;
+        color: orange;
+
+        &:hover {
+            transition: all 0.3s ease-in-out;
+            color: white;
+            cursor: pointer;
+        }
+    }
 }
