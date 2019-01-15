@@ -190,7 +190,7 @@ button {
     h#{$i} { font-family: 'Merriweather Sans', sans-serif; }
 }
 
-p, span, li, button, em, a {
+p, span, li, button, em, a, blockquote {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -455,4 +455,58 @@ nav {
 
 #event3 {
     background-image: url('https://images.unsplash.com/photo-1546091184-84697ac05c9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80');
+}
+
+/* Testimonials */
+
+.testimonial {
+    align-items: flex-start;
+    color: white;
+}
+
+.testimonial-quote {
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: flex-start;
+    max-width: 450px;
+    border-radius: 7px;
+
+    blockquote {
+        position: relative;
+        z-index: 1;
+    }
+
+    i {
+        position: absolute;
+        top: 3746px;
+        color: rgba(100, 100, 100, 0.5);
+    }
+
+    i:before {
+        z-index: -1;
+    }
+}
+
+.testimonial-profile {
+    margin-top: 15px;
+    justify-content: flex-start;
+
+    p {
+        margin-left: 10px;
+    }
+}
+
+.testimonial-company {
+    font-size: 14px;
+}
+
+#quote-1 {
+    left: 565px;
+}
+
+#quote-2 {
+    left: 1059px;
+}
+
+#quote-3 {
+    left: 1553px;
 }
