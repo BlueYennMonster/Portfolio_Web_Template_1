@@ -1,5 +1,9 @@
-/* Fonts */
+/* Change device width settings to assist responsiveness */
 @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans|Open+Sans");
+@viewport {
+  width: device-width;
+  zoom: 1.0; }
+/* Fonts */
 /* Reset elements */
 h1 {
   margin: 0;
@@ -83,7 +87,7 @@ button {
 .hidden {
   display: none; }
 
-#navigation {
+#desktop-navigation {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -276,6 +280,37 @@ hr {
 
 /* HEADER STYLING */
 /* Info */
+#mobile-nav-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+#mobile-top-info {
+  padding: 25px 0px;
+  font-size: 20px;
+  background-color: rgba(100, 100, 100, 0.7); }
+
+#mobile-logo {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(100, 100, 100, 0.7); }
+
+#mobile-navigation {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; }
+
+#mobile-nav-links {
+  padding: 10px 0px;
+  text-align: center;
+  background-color: rgba(150, 150, 150, 0.5); }
+
 nav {
   font-size: 18px;
   color: white; }
@@ -298,20 +333,31 @@ nav {
 #top-info > div {
   margin-right: 20px; }
 
-#nav-options li {
+#desktop-nav-links, #mobile-nav-links {
+  position: relative; }
+
+#desktop-nav-options li {
   display: inline-block; }
 
-#dropdown-options {
-  display: block;
+#dropdown-options, #mobile-dropdown-options {
   position: absolute;
-  top: 333px;
-  right: 509px;
-  width: 274px; }
-  #dropdown-options li {
+  top: 79px; }
+  #dropdown-options li, #mobile-dropdown-options li {
     display: block;
-    background-color: rgba(255, 115, 0, 0.5);
-    margin: 1.5px 0px;
-    padding: 5px 0px 5px 10px; }
+    width: 100%;
+    margin: 1px 0px;
+    padding: 5px 0px 5px 10px;
+    background-color: rgba(235, 106, 0, 0.9); }
+
+#dropdown-options {
+  left: 340px;
+  width: 274px; }
+
+#mobile-dropdown-options {
+  left: 0px;
+  width: 100%;
+  font-size: 28px;
+  font-family: 'Merriweather Sans', sans-serif; }
 
 /* FEATURE STYLING */
 #features-test {
@@ -436,13 +482,16 @@ nav {
   background-color: rgba(0, 0, 0, 0.5);
   align-items: flex-start;
   max-width: 450px;
-  border-radius: 7px; }
+  border-radius: 7px;
+  height: 191px; }
   .testimonial-quote blockquote {
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    top: -30px; }
   .testimonial-quote i {
-    position: absolute;
-    top: 3746px;
+    position: relative;
+    top: 10px;
+    left: 10px;
     color: rgba(100, 100, 100, 0.5); }
   .testimonial-quote i:before {
     z-index: -1; }
@@ -455,15 +504,6 @@ nav {
 
 .testimonial-company {
   font-size: 14px; }
-
-#quote-1 {
-  left: 565px; }
-
-#quote-2 {
-  left: 1059px; }
-
-#quote-3 {
-  left: 1553px; }
 
 /* FOOTER STYLING */
 #footer {
@@ -532,5 +572,27 @@ nav {
       transition: all 0.3s ease-in-out;
       color: white;
       cursor: pointer; }
+
+/* Responsiveness styling */
+@media screen and (max-width: 1025px) {
+  #desktop-nav-links {
+    width: 100%; }
+
+  #top-info {
+    justify-content: space-between; }
+    #top-info div {
+      margin-right: 0px; } }
+@media screen and (max-width: 769px) {
+  .section > div {
+    width: 80%; } }
+@media screen and (max-width: 426px) {
+  #desktop-nav-container {
+    display: none; }
+
+  #mobile-nav-container {
+    display: flex; }
+
+  #header > div {
+    padding-top: 346px; } }
 
 /*# sourceMappingURL=styles.css.map */

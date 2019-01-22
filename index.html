@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- stylesheets -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -20,7 +20,32 @@
 
         <div class="section lg" id="header">
             <div>
-                <div class="w-100">
+                <!-- Mobile nav -->
+                <div class="w-100" id="mobile-nav-container">                    
+                    <div class="w-100" id="mobile-logo">
+                        <i class="fab fa-adn fa-7x"></i>
+                    </div>
+                    <div class="w-100 flex-row" id="mobile-top-info">
+                        <div>
+                            <i class="fas fa-phone fa-sm"></i>
+                            <span>+00 0467 234 438</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <span>email@email.com</span>
+                        </div>
+                    </div>
+                    <nav class="w-100" id="mobile-nav-links">
+                        <i class="fas fa-bars fa-3x"></i>
+                        <ul class="hidden" id="mobile-dropdown-options">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Browse <i class="fas fa-angle-down"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Desktop nav -->
+                <div class="w-100" id="desktop-nav-container">
                     <div class="w-100 flex-row start" id="top-info">
                         <div>
                             <i class="fas fa-phone fa-sm"></i>
@@ -31,12 +56,12 @@
                             <span>email@email.com</span>
                         </div>
                     </div>
-                    <div class="w-100" id="navigation"> 
+                    <div class="w-100" id="desktop-navigation"> 
                         <div>
                             <i class="fab fa-adn fa-5x"></i>
                         </div>
-                        <nav class="w-20">
-                            <ul class="flex-row" id="nav-options">
+                        <nav class="w-40" id="desktop-nav-links">
+                            <ul class="flex-row" id="desktop-nav-options">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">About</a></li>
                                 <li id="dropdown"><i class="fas fa-angle-down"></i> Browse</li>
@@ -55,7 +80,6 @@
                     <p>Nam alia probo scripta ad, feugiat assueverit theophrastus et mel, cu per habemus voluptatum. In idque tation mei, eos aeterno aliquid ad.</p>
                     <button>In per integre legimus comprehensam</button>
                 </div>
-                
             </div>
         </div>
         

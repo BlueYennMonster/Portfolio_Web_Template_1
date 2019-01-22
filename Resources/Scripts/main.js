@@ -1,14 +1,25 @@
+// Desktop nav
+
 $dropdownMenu = $('#dropdown');
+$mobileDropdown = $('#mobile-nav-links');
 $dropdownOptions = $('#dropdown-options');
+$mobileDropdownOptions = $('#mobile-dropdown-options')
 
-$dropdownMenu.on('click', function(e){
-    e.stopPropagation();
-    $dropdownOptions.toggleClass('hidden');
-    $dropdownOptions.toggleClass('flex-column');
-
-    $(document.body).click(function(){
-        $dropdownOptions.addClass('hidden');
-        $dropdownOptions.removeClass('flex-column');
+function dropdownMenu(clickElement, nav){
+    clickElement.on('click', function(e){
+        e.stopPropagation();
+        nav.toggleClass('hidden');
+        nav.toggleClass('flex-column');
+    
+        $(document.body).click(function(){
+            nav.addClass('hidden');
+            nav.removeClass('flex-column');
+        })
     })
-})
+}
 
+// Desktop nav
+dropdownMenu($dropdownMenu, $dropdownOptions);
+
+// Mobile nav
+dropdownMenu($mobileDropdown, $mobileDropdownOptions);
