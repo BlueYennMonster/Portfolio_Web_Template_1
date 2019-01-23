@@ -351,28 +351,27 @@ nav {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(4, 1fr 2fr);
-    grid-template-areas:
-        "image header image header image header image header"
-        ". text . text . text . text";
+    grid-template-areas: "img-1 head-1 img-2 head-2 img-3 head-3 img-4 head-4"
+                         "img-1 txt-1 img-2 txt-2 img-3 txt-3 img-4 txt-4";
 
-        div {
-            justify-self: center;
-        }
-}
-
-.feature-image {
-    grid-area: image;
+    .grid-image {
+        justify-self: center;
+    }
 }
 
 .feature-text {
-    grid-area: text;
     font-size: 14px;
 }
 
 .feature-head {
-    grid-area: header;
     font-size: 16px;
     margin-bottom: 10px;
+}
+
+@for $i from 1 through 4 {
+    #img-#{$i} { grid-area: img-#{$i} }
+    #head-#{$i} { grid-area: head-#{$i} }
+    #txt-#{$i} { grid-area: txt-#{$i} }
 }
 
 /* IMAGE BOXES STYLING */
@@ -675,6 +674,13 @@ nav {
             margin-right: 0px;
         }
     }
+
+    #features-test {
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: "img-1 head-1" "img-1 txt-1" "img-2 head-2" "img-2 txt-2" "img-3 head-3" "img-3 txt-3" "img-4 head-4" "img-4 txt-4";
+        grid-template-rows: repeat(4, 1fr 2fr);
+        grid-row-gap: 4px;
+    }
 }
 
 @media screen and (max-width:769px) {
@@ -682,6 +688,15 @@ nav {
         & > div {
             width: 80%;
         }
+    }
+}
+
+@media screen and (max-width:501px) {
+    #features-test {
+        grid-template-areas: "img-1" "head-1" "txt-1" "img-2" "head-2" "txt-2" "img-3" "head-3" "txt-3" "img-4" "head-4" "txt-4";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr 1fr 2fr);
+        text-align: center;
     }
 }
 
