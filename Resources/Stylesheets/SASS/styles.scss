@@ -383,27 +383,33 @@ nav {
     background-position: center;
     justify-content: flex-end;
 
-    em {
-        background-color: rgba(255, 115, 0, 0.5);
-        color: white;
-        font-size: 40px;
-        padding: 15px;
-        position: relative;
-        top: -201px;
-        left: -9px;
-    }
-
-    a {
-        display: block;
-        transition: all 0.3s ease-in-out;
+    div {
         background-color: white;
-        padding: 10px;
-        border-left: 1px solid orange;
+        position: relative;
+        bottom: -1px;
 
-        &:hover {
-            transition: all 0.3s ease-in-out;
-            background-color: orange;
+        em {
+            background-color: rgba(255, 115, 0, 0.5);
             color: white;
+            font-size: 40px;
+            padding: 15px;
+            position: absolute;
+            top: -277px;
+            left: -9px;
+        }
+    
+        a {
+            display: block;
+            transition: all 0.3s ease-in-out;
+            background-color: white;
+            padding: 10px;
+            border-left: 1px solid orange;
+    
+            &:hover {
+                transition: all 0.3s ease-in-out;
+                background-color: orange;
+                color: white;
+            }
         }
     }
 }
@@ -662,6 +668,30 @@ nav {
 
 /* Responsiveness styling */
 
+@media screen and (max-width:1441px) {
+    #frame-container {
+        flex-direction: column;
+    }
+
+    .frame {
+        width: 50%;
+        height: 400px;
+        margin-top: 30px;
+
+        div {
+            em {
+                top: -376px;
+            }
+        }
+    }
+
+    .section {
+        & > div {
+            width: 80%;
+        }
+    }
+}
+
 @media screen and (max-width:1025px) {
     #desktop-nav-links {
         width: 100%;
@@ -681,13 +711,15 @@ nav {
         grid-template-rows: repeat(4, 1fr 2fr);
         grid-row-gap: 4px;
     }
+
+    .frame {
+        width: 70%;
+    }
 }
 
-@media screen and (max-width:769px) {
-    .section {
-        & > div {
-            width: 80%;
-        }
+@media screen and (max-width:768px) {
+    .frame {
+        width: 100%;
     }
 }
 

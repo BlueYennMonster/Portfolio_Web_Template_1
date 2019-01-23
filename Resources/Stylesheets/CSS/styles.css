@@ -418,24 +418,28 @@ nav {
   background-size: cover;
   background-position: center;
   justify-content: flex-end; }
-  .frame em {
-    background-color: rgba(255, 115, 0, 0.5);
-    color: white;
-    font-size: 40px;
-    padding: 15px;
-    position: relative;
-    top: -201px;
-    left: -9px; }
-  .frame a {
-    display: block;
-    transition: all 0.3s ease-in-out;
+  .frame div {
     background-color: white;
-    padding: 10px;
-    border-left: 1px solid orange; }
-    .frame a:hover {
+    position: relative;
+    bottom: -1px; }
+    .frame div em {
+      background-color: rgba(255, 115, 0, 0.5);
+      color: white;
+      font-size: 40px;
+      padding: 15px;
+      position: absolute;
+      top: -277px;
+      left: -9px; }
+    .frame div a {
+      display: block;
       transition: all 0.3s ease-in-out;
-      background-color: orange;
-      color: white; }
+      background-color: white;
+      padding: 10px;
+      border-left: 1px solid orange; }
+      .frame div a:hover {
+        transition: all 0.3s ease-in-out;
+        background-color: orange;
+        color: white; }
 
 #frame1 {
   background-image: url("https://images.unsplash.com/photo-1547241508-f95f5c4c1305?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"); }
@@ -605,6 +609,19 @@ nav {
       cursor: pointer; }
 
 /* Responsiveness styling */
+@media screen and (max-width: 1441px) {
+  #frame-container {
+    flex-direction: column; }
+
+  .frame {
+    width: 50%;
+    height: 400px;
+    margin-top: 30px; }
+    .frame div em {
+      top: -376px; }
+
+  .section > div {
+    width: 80%; } }
 @media screen and (max-width: 1025px) {
   #desktop-nav-links {
     width: 100%; }
@@ -618,10 +635,13 @@ nav {
     grid-template-columns: 1fr 5fr;
     grid-template-areas: "img-1 head-1" "img-1 txt-1" "img-2 head-2" "img-2 txt-2" "img-3 head-3" "img-3 txt-3" "img-4 head-4" "img-4 txt-4";
     grid-template-rows: repeat(4, 1fr 2fr);
-    grid-row-gap: 4px; } }
-@media screen and (max-width: 769px) {
-  .section > div {
-    width: 80%; } }
+    grid-row-gap: 4px; }
+
+  .frame {
+    width: 70%; } }
+@media screen and (max-width: 768px) {
+  .frame {
+    width: 100%; } }
 @media screen and (max-width: 501px) {
   #features-test {
     grid-template-areas: "img-1" "head-1" "txt-1" "img-2" "head-2" "txt-2" "img-3" "head-3" "txt-3" "img-4" "head-4" "txt-4";
